@@ -651,6 +651,7 @@ h1.navbar-brand {
 #about {
     background-color: #0c0b09;
     color: #fff;
+    text-align: center;
 }
 
 #about h3 {
@@ -714,6 +715,29 @@ h1.navbar-brand {
 .welcome-message p {
     font-size: 13px;
     margin-left: 135px;
+}
+
+/* Adjust aspect ratio for smaller screens */
+@media only screen and (max-width: 600px) {
+    #about h3 {
+        font-size: 25px;
+    }
+    
+    #about p {
+        font-size: 14px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        /* Hide the "Sneak peak to the beauty of Sibulan" text */
+        #about p:last-child {
+            display: none;
+        }
+        
+        /* Hide the iframe */
+        .video-container {
+            display: none;
+        }
+    }
 }
 
 /*=================================================================
@@ -987,6 +1011,13 @@ ul.external li a:hover {
 #accomodation .owl-prev:hover,
 #accomodation .owl-next:hover {
     color: #fff;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    #accomodation .testimonial-item {
+        width: 90%; /* Adjust width for smaller screens */
+    }
 }
 
 .price-table {
@@ -1305,11 +1336,12 @@ ul.external li a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    margin:auto;
+    margin:0 auto;
     padding:100px;
     width: 100%;
     margin-top:0;
     height: 100%;
+    justify-content: center;
   }
 
 /*=================================================================
