@@ -1017,6 +1017,13 @@ ul.external li a:hover {
 @media only screen and (max-width: 600px) {
     #accomodation .testimonial-item {
         width: 90%; /* Adjust width for smaller screens */
+        margin: 20px auto; /* Center the section horizontally and add margin between items */
+        float: none; /* Ensure it's not floated */
+    }
+
+    #accomodation .testimonial-item img {
+        max-width: 100%; /* Ensure images don't exceed the container width */
+        height: auto; /* Maintain aspect ratio */
     }
 }
 
