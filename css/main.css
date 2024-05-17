@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Gothic+A1:300,300i,400,400i,500,500i,600,600i,700,700i|Martel:300,300i,400,400i,700,700i,900,900i|Work+Sans:600,700&display=swap");
 
 body {
-    background-color: #fff;
+    background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     line-height: 24px;
     font-size: 16px;
@@ -654,6 +654,11 @@ h1.navbar-brand {
     text-align: center;
 }
 
+#about h2{
+    color:#ffffff;
+    margin: 0 auto;
+}
+
 #about h3 {
     color: #ffffff;
     margin: 0 0 35px;
@@ -725,6 +730,10 @@ h1.navbar-brand {
     
     #about p {
         font-size: 14px;
+    }
+
+    #about h2{
+        font-size: 50px;
     }
     
     @media only screen and (max-width: 600px) {
@@ -1178,15 +1187,72 @@ ul.external li a:hover {
     }
 }
 
+/*======================================
+ABOUT CONTINUATION
+=====*/
+#about .divide{
+    width:90%;
+}
+#gov {
+    background-color: #0c0b09;
+    color: #fff;
+    min-height: 600px;
+    height: 600px; /* Ensure height is 600px by default */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 990px) {
+    #gov {
+        height: auto; /* Change height to auto for smaller screens */
+    }
+    #gov .overlay {
+        min-height: auto;
+        padding: 20px;
+    }
+}
+
+#gov h2 {
+    font-weight: bold;
+}
+
+#gov .overlay {
+    min-height: 1000px;
+    width: 100%;
+    height: 100%;
+}
+
+#gov .our-team {
+    text-align: center;
+    background: #222;
+    transition: all 0.5s ease 0s;
+    margin-bottom: 20px;
+    padding: 20px;
+    height: 100%;
+    min-height: 490px;
+    width: 100%;
+}
+
+#gov img {
+    display: flex;
+    height: auto;
+    height:300px;
+    max-height: 300px;
+    width: 100%;
+}
+
+
+/*======================================
+ABOUT CONTINUATION
+=====*/
+
 #developers {
-    /* background-image: url(../img/team/bg.jpeg);
-    padding: 0;
-    background-color: rgba(0,0,0, 0.78); */
     background-image: url(../img/team/bg.jpeg);
+    padding: 0;
+    background-color: rgba(0,0,0, 0.78);
     background-size: cover; /* Ensure the background image covers the whole section */
     padding: 20px 0; /* Add some padding to the top and bottom */
     min-height: 800px; /* Set a minimum height to make the section as tall as the viewport */
-    background-color: rgba(0, 0, 0, 0.78);   
+    padding-top:0;
 }
 
 #developers h2{
@@ -1522,6 +1588,14 @@ textarea.form-control {
     font-size: 12px;
 }
 
+.gov-off{
+    font-size:75px;
+    font-weight:bold;
+    padding-bottom:0;
+    margin-bottom:0;
+}
+.divide{}
+
 
 
 /*============================================================ 
@@ -1703,6 +1777,9 @@ textarea.form-control {
 
 /*destinations*/
 
+    #destinations{
+        background-color: #ffffff;
+    }
     .portfolio-item {
         margin: 0 auto 10px;
         font-size: 14px;
